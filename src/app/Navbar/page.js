@@ -1,14 +1,14 @@
 import react from "react";
 import "./Navbar.css";
-import logo4b from "../../assets/logo.png";
+import Image from "next/image";
 
 function page() {
   return (
     <>
       <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900 navbarhere">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-          <a href="#" class="flex items-center">
-            <img src='https://portfolio-4bprogramming.vercel.app/static/media/4b.a50e7f6679154e9bcc9e.png' class="h-6 mr-3 sm:h-9" alt="Logo" />
+          <a href="#home" class="flex items-center">
+            <Image src="/logo.png" alt="Logo" width="65" height="70" priority />
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               Programming
             </span>
@@ -65,7 +65,7 @@ function page() {
             <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >

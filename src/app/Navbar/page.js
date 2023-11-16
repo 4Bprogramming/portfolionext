@@ -1,11 +1,13 @@
 import react from "react";
 import "./Navbar.css";
 import Image from "next/image";
+import Script from 'next/script'
 
 function page() {
   return (
     <>
       <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900 navbarhere">
+      <Script src="https://third-party-script.js"></Script>
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
           <a href="#home" class="flex items-center">
             <Image src="/logo.png" alt="Logo" width="65" height="70" priority />

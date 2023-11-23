@@ -6,6 +6,7 @@ import Image from "next/image";
 import "./HomeP.css";
 import "animate.css";
 
+
 function page() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -56,19 +57,24 @@ function page() {
       {/* <div className="homepage"></div> */}
       <div className="flex justify-between h-[512px] homepage" id="home">
         <div className="w-full shrink-0 mt-32 flex flex-col items-center md:block md:w-auto bodyhome">
-          <h2 className="text-5xl text-white text-center font-bold max-w-xs md:text-left">
+          
+            <div className="roscasHome"></div>
+
+          <h2 className="text-5xl text-white text-center font-bold max-w-xs md:text-left tittleHome">
             ¡Somos 4B Programming!
           </h2>
-          <h2 className="text-4xl text-white text-center font-medium mt-4 md:text-left">
+          <h2 className="text-4xl text-white text-center font-medium mt-4 md:text-left tittleHome1">
             <span
               className="txt-rotate"
               dataPeriod="1000"
               data-rotate='[ "Páginas Web", "e-commerce", "¡Mucho más!" ]'
-            >
+              >
               <span className="wrap">{text}</span>
             </span>
+           
             {/* Our pizza is always made with fresh ingredients. */}
           </h2>
+        
           <div className="mt-4">
             {/* <Button variant="white" onClick={() => document.querySelector('#menu')?.scrollIntoView()}>
                 Order now
@@ -76,7 +82,7 @@ function page() {
           </div>
         </div>
         <div className="hidden md:block self-center">
-          <img
+          <Image
             src="/header-img.svg"
             alt="Pizza image"
             width="600"

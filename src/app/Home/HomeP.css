@@ -1,12 +1,45 @@
 .homepage {
   margin-top: 0;
-  background-image: url('../../../public/banner-bg.jpg');
+  background: rgb(5, 65, 134);
+  /* background-: url('../../../public/video.mp4'); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+.roscasHome{
+  background: url('../../../public/roscas.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* z-index: 10; */
+  /* position: fixed; */
+  height: 500px;
+  width: 500px;
+  margin-top: -100px;
+  opacity: 0.8;
+  animation: downup 5s linear infinite;
+}
+.tittleHome{
+  margin-top: -400px;
+  position: absolute;
+}
+.tittleHome1{
+  margin-top: -300px;
+  position: absolute;
+}
+@keyframes downup {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 .homepage img {

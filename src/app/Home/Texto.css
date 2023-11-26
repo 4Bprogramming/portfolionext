@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+.Cmpleted {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 35px;
+  padding-top: 40vh;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: -600px;
+}
+
+.Cmpleted div {
+  display: inline-block;
+  overflow: hidden;
+
+  white-space: nowrap;
+  height: 40px;
+}
+
+.Cmpleted div:first-of-type {
+  /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  margin-top: 10px;
+  animation: showup 7s infinite;
+}
+
+.Cmpleted div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+
+.Cmpleted div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 500px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+    .Cmpleted  {
+  display: none;
+  }
+}

@@ -1,0 +1,123 @@
+
+.light-bg {
+  background: rgb(5, 65, 134);
+}
+.white {
+  color: #ffffff;
+}
+.roscasHome{
+    background: url('../../../public/roscas.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* z-index: 10; */
+    /* position: fixed; */
+    height: 500px;
+    width: 500px;
+    margin-top: -70px;
+    opacity: 0.8;
+    animation: downup 5s linear infinite;
+  }
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-full {
+  flex: 1;
+}
+
+.headerHome {
+  justify-content: space-between;
+  padding: 1.1rem 5rem 0rem 5rem;
+}
+.headerHome h1 {
+    margin-top: -400px;
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+}
+.white2 {
+  color: #ffffff;
+  margin-top: 500px;
+position: absolute;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.headerHome p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.headerHome button {
+  cursor: text;
+  margin-bottom: 1.5rem;
+}
+.headerHome a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.headerHome p{
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    margin-top: -180px;
+}
+.titleExpert{
+    margin-top: 80px;
+}
+.headerHome img {
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+@media (max-width: 768px) {
+  .flex {
+    row-gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerHome {
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  section {
+    padding: 1rem 2rem;
+  }
+  .headerHome h1 {
+    margin-top: -250px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .white2 {
+    color: #ffffff;
+    margin-top: 40px;
+  
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .roscasHome{
+   
+    height: 300px;
+    width: 300px;
+    margin-top: -70px;
+    opacity: 0.8;
+    animation: downup 5s linear infinite;
+  }
+}

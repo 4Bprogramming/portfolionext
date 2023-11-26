@@ -4,12 +4,14 @@ import Email from '../Component/Email/Email'
 import {AiFillGithub} from 'react-icons/ai'
 import {BsInstagram} from 'react-icons/bs'
 import Link from 'next/link'
+
 // import whatsapp from '../../assets/WhatsApp.png'
 // import './Contac.css'
 
 function page() {
   return (
     <>
+  
     <div id='contact'>
 
           

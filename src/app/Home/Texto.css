@@ -89,6 +89,11 @@
     width: 450px;
   }
 }
+@media (max-width: 1329px) {
+  .Cmpleted  {
+display: none;
+}
+}
 
 @media (max-width: 768px) {
     .Cmpleted  {

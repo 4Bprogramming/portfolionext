@@ -61,7 +61,10 @@
   .webimage {
     max-width: 500px;
     height: 350px;
-   
+    background-image: url(../assets/web-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   @media (max-width: 767px) {
     .aboutpagebackground {

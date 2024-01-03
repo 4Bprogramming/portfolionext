@@ -61,17 +61,21 @@
   cursor: pointer;
 }
 .headerHome p {
-  color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
   margin-top: -180px;
   text-align: justify;
 }
 .textHomeP{
+ color: #ffffff;
+ position: relative;
+ 
+}
+.textHomeP{
   animation-duration: 3s;
   animation-name: slidein;
+  
 }
 @keyframes slidein {
   from {
@@ -135,7 +139,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .flex {
     row-gap: 2rem;
     flex-direction: column;
@@ -167,4 +171,5 @@
     opacity: 0.8;
     animation: downup 5s linear infinite;
   }
+  
 }
